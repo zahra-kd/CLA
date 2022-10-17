@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------------------header-------------------------*/
+header {
+    background-image: url(image/banner.jpg);
+    height: 100vh;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li a:hover{
+    color: #48ca95;
+}
+nav ul li:first-child a{
+    color: #48ca95;
+}
+.header-details{
+margin: 40px 20px;
+display: flex;
+justify-content: space-between;
+
+}
+.header-picture{
+    width: 50%
+}
+.header-picture img{
+    max-width: 100%;
+}
+.header-info{
+    width: 40%;
+    color: white;
+}
+.header-info h1{
+    font-weight: lighter;
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+.header-info h1 span{
+    font-size: 80px;
+    font-weight: 600;
+}
+.header-info p{
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 40px;
+}
+.header-info button{
+    width: 35%;
+    padding: 18px;
+    margin-right: 8px;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.header-info button:hover{
+    background-color: #48ca95;
+}
+/*-------------------------------section categories-----------------------------*/
+.categories{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.categories div{
+    width: 28%;
+    padding: 30px 20px;
+    border: 1px solid #48ca95;
+    border-radius: 20px;
+}
+.categories div h2{
+    margin: 20px 0px;
+}
+.categories div p{
+    font-size: larger;
+}
+/*----------------------------section produit--------------------------*/
+.products{
+    background-color: #f1f7f4;
+    text-align: center;
+    padding: 40px 20px;
+}
+.products h2{
+    font-size: 35px;
+    width: 25%;
+    border-bottom: 1px solid #48ca95;
+    margin: auto;
+}
+.catalogue{
+    background-color: white;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.catalogue div{
+    width: 30%;
+    margin-bottom: 40px;
+}
+.catalogue div button{
+    width: 70%;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+    font-size: larger;
+    border: none;
+    
+}
+.btn_see_more{
+    width: 100%;
+    text-align: center;
+}
+.btn_see_more button{
+    background-color: white !important;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 2px solid #48ca95 !important;
+    color: #48ca95 !important;
+    font-weight: bold;
+    
+}
+.products button:hover{
+    background-color: #48ca95 !important;
+    transition: 0.8s;
+    color: white !important;
+}
+/*-----------------------------publicité------------------------------*/
+.offre_publicité {
+    background-color: #4f4aa6;
+}
+.publicité{
+    width: 80%;
+    margin: auto;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.publicité_texte h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.publicité_texte h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.publicité_texte button{
+    padding: 20px 35px;
+    background-color: #48ca95;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+/*---------------------------témoignage------------------*/
+.témoignage{
+    margin-top: 60px;
+}
+.témoignage h2{
+    font-size: 40px;
+    width: 34%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #48ca95;
+}
+.témoignage_text{
+    width: 65%;
+    margin: 40px auto 40px auto;
+}
+.témoignage_text h3, .témoignage_text i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.témoignage_text p{
+    font-size: larger;
+}
+/*------------------------------section contact---------------------*/
+.contact{
+    background-image: url(image/contact_g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact_container{
+    width: 60%;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+}
+.contact_container h2{
+    font-size: 35px;
+    width: 38%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid white;
+
+}
+.contact_container form{
+    width: 80%;
+    margin: 40px auto;
+    border: 2px solid white;
+    padding: 40px 40px;
+}
+
+.contact_container input, .contact_container textarea {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-bottom: 8px;
+    outline: none;
+    color: white;
+    font-size: large;
+}
+/*font size de textarea est différent malgrès l'affectation de la même taille*/
+.contact_container input::placeholder, .contact_container textarea::placeholder{
+    color: white;
+}
+.form_btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.form_btn button{
+    padding: 15px 40px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #48ca95;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+/*--------------------------------footer----------------------------------*/
+footer{
+    background-color: black;
+    color: white;
+}
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    border-bottom: 1px solid white;
+}
+.footer_détail{
+    width: 23%;
+}
+.footer_détail h3{
+    margin-bottom: 20px;
+}
+.footer_détail input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+.footer_détail button{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #48ca95;
+    color: white;
+}
+#footer_logo{
+    display: block;
+    margin-bottom: 10px;
+}
+#footer_rights{
+    text-align: center; 
+    padding: 20px;
+}
+
+
